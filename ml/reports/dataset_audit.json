@@ -1,0 +1,63 @@
+{
+  "dataset_summary": {
+    "total_rows": 3969,
+    "total_columns": 71,
+    "unique_participants": 43,
+    "positive_label_count": 254,
+    "negative_label_count": 3715,
+    "prevalence": 0.064,
+    "date_min": "2021-05-14",
+    "date_max": "2023-12-16",
+    "missing_values_count": 0
+  },
+  "target_verification": {
+    "is_binary": true,
+    "unique_target_values": [
+      0,
+      1
+    ],
+    "positive_count_dbp": 254,
+    "negative_count_sd": 3715,
+    "prevalence": 0.064,
+    "target_definition": "Day Before Panic (DBP, ~24-hour impending panic symptoms): 1.0 indicates that a verified clinical panic event occurred on the subsequent day (t+1); 0.0 indicates a Stable Day (SD) with no panic event on day t or day t+1.",
+    "day_of_panic_excluded": true,
+    "dp_contamination_count": 0,
+    "dbp_label_match_count": 254,
+    "raw_diary_total_events": 594,
+    "raw_diary_patients": 34,
+    "scientific_justification": "Predicting DBP (the day before) rather than DP (the day of) ensures models evaluate impending vulnerability rather than detecting an already ongoing panic episode. Excluding DP removes post-onset somatic distortions (e.g. tachycardia during acute attack)."
+  },
+  "static_fingerprint_check": {
+    "participant_count": 43,
+    "unique_profiles_count": 43,
+    "static_columns_count": 19,
+    "static_fingerprinting_confirmed": true
+  },
+  "class_concentration": {
+    "participants_with_zero_positives": 24,
+    "top_5_participants_positive_events": 194,
+    "top_5_participants_percentage": 76.38
+  },
+  "high_zero_features": {
+    "gender": 100.0,
+    "job": 96.07,
+    "medication_in_month": 100.0,
+    "alcohol": 95.41,
+    "smoking": 93.83,
+    "menstruation": 95.62,
+    "exercise": 88.74,
+    "panic": 93.6,
+    "ACQ": 98.92,
+    "APPQ_1": 97.78,
+    "APPQ_2": 97.73,
+    "APPQ_3": 97.73,
+    "BSQ": 98.89,
+    "BFNE": 99.7,
+    "CES_D": 98.87,
+    "GAD_7": 97.81,
+    "KOSSSF": 99.14,
+    "PHQ_9": 97.2,
+    "SADS": 99.7,
+    "STAI_X1": 97.48
+  }
+}

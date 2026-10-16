@@ -1,0 +1,51 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.venv/
+env/
+venv/
+ENV/
+
+# Environment Variables & Secrets
+.env
+*.env
+!.env.example
+.env.local
+.env.*.local
+
+# Databases & Local State
+*.db
+*.sqlite
+*.sqlite3
+
+# Node & Frontend
+node_modules/
+dist/
+dist-ssr/
+frontend/dist/
+*.local
+.npm/
+.eslintcache
+*.tsbuildinfo
+
+# Testing & Artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Scratch Files
+scratch/
